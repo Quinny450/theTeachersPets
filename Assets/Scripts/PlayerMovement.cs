@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    private const float groundCheckRadius = 0.2f;
+    private const float groundCheckRadius = 0.5f;
 
     private bool isJumping = false;
 
