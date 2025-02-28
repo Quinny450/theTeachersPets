@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
+    private float speed = 6f;
+    private float jumpingPower = 15f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -43,7 +43,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(float move)
     {
-        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+        if (move == 0 || Mathf.Abs(move) < 0.1f)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+        }
     }
 
     private void Jump()

@@ -33,3 +33,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Options_Menu_Alpha_2.unity
     guid: 65f938407d95a9c4b9a05b1d2bf4ab1b
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
