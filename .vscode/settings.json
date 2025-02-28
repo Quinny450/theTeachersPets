@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "theTeachersPets.sln"
+    "dotnet.defaultSolution": "theTeachersPets (1).sln"
 }
